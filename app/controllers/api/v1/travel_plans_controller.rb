@@ -7,7 +7,6 @@ class Api::V1::TravelPlansController < ApplicationController
 
     def create
         travel_plan = TravelPlan.new(travel_plan_params)
-        byebug
         if travel_plan.save
             render json: travel_plan, status: :accepted
         else
