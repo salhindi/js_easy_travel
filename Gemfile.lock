@@ -155,7 +155,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  fast_jsonapi (~> 1.1, >= 1.1.1)
+  fast_jsonapi
   listen (~> 3.3)
   pry (~> 0.14.1)
   puma (~> 5.0)
