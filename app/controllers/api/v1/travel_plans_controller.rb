@@ -7,9 +7,8 @@ class Api::V1::TravelPlansController < ApplicationController
 
     def create
         travel_plan = TravelPlan.new(travel_plan_params)
-        # binding.pry
         if travel_plan.save
-            render json: travel_plan, status: :accepted
+            render json: TravelPlanSerializer.new(travel_plan), status: :accepted
         else
             render json: {errors: travel_plan.errors.full_messages}, status: :unprocessible_entity
         end
