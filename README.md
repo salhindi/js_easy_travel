@@ -5,20 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+Ruby 2.6.1
 
-* System dependencies
+
 
 * Configuration
+fork and clone backend
+bundle install
+launch server by running rails s
 
-* Database creation
+        LINK TO FRONTEND
+        https://github.com/salhindi/js_easy_travel_frontend
+        windows deployment: explorer.exe index.html
+        mac deployment: open index.html
+        
 
-* Database initialization
 
-* How to run the test suite
+Database creation: rails db:create
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
