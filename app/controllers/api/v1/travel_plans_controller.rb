@@ -7,6 +7,7 @@ class Api::V1::TravelPlansController < ApplicationController
 
     def create
         travel_plan = TravelPlan.new(travel_plan_params)
+        
         if travel_plan.save
             render json: TravelPlanSerializer.new(travel_plan), status: :accepted
         else
