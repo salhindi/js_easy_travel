@@ -7,6 +7,7 @@ class Api::V1::DestinationsController < ApplicationController
 
     def create
         destination = Destination.new(destination_params)
+    
         if destination.save
             render json: DestinationSerializer.new(destination), status: :accepted
         else
